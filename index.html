@@ -38,7 +38,7 @@ function buildTraces(){
     const cur = lbl==="2026";
     return {
       x:xs, y:ys, mode:"lines", name:lbl, type:"scatter",
-      line:{color:c.color, width:cur?3.2:1.2, dash:cur?"solid":"dot"},
+      line:{color:c.color, width:cur?3.4:1.6},
       opacity:cur?1:0.85,
       hovertemplate:"<b>"+lbl+"</b><br>día %{x}<br>%{y:.1%}<extra></extra>"
     };
